@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/volume_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:text="+"/>
+
+    <com.example.androidratingbar.CustomRatingBar
+        android:id="@+id/volume_ratingbar"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:numStars="9"
+        android:stepSize="1.0" 
+        style="@style/volumeroomRatingBar"/>
+    <Button
+        android:id="@+id/volume_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-" />
+
+</LinearLayout>
